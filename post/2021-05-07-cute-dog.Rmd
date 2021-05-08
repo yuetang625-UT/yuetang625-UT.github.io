@@ -1,0 +1,26 @@
+---
+title: Python R cross talk
+author: Yue
+date: '2021-05-07'
+slug: Python-R
+categories: []
+tags: []
+description: ''
+---
+![](/img/cutdog.jpg)
+
+Reticulate package lets R and python phay together!
+
+```{R}
+library(reticulate)
+hi<- "hello"
+```
+
+```{python}
+hi="world"
+print(r.hi,hi)
+```
+
+```{R}
+cat(c(hi,py$hi))
+```
